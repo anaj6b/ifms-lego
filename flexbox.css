@@ -1,0 +1,92 @@
+.pai{
+	width: 100%;
+	height: 100%;
+	display: flex; /*transforma o elemento em flex container */
+	flex-direction: row; /*define a direção dos filhos */
+	flex-wrap: wrap; /*permite a quebra de linhas*/
+	justify-content: flex-start;
+	/*alinha em relação ao eixo principal*/
+	/*align-items: center;
+	alinha em relação ao eixo secundário */ 
+}
+.filho1{
+	width:100%;
+	height: 15vh;
+	background-color: darkgreen;
+	display: flex; /*transforma o elemento em flex container */
+	flex-direction: row; /*define a direção dos filhos */
+	flex-wrap: wrap; /*permite a quebra de linhas*/
+	justify-content: space-around;
+	align-items: center;
+}
+
+.filho2{
+	width:100%;
+	height: 20vh;
+	background-color: lightgrey;
+	display: flex; /*transforma o elemento em flex container */
+	flex-direction: row; /*define a direção dos filhos */
+	flex-wrap: wrap; /*permite a quebra de linhas*/
+	justify-content: space-around;
+	align-items: center;
+}
+.filho4 .texto{
+	color: blue;
+	font-size: 30px;
+
+}
+
+.filho4{
+	width:70%;
+	height: 80vh;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+}
+.filho4 img{
+	height: 80%;
+	width: 80%;
+}
+.filho5{
+	width:30%;
+	height: 80vh;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+.filho5 img{
+	height: auto;
+	width: 90%;
+	border: 2px;
+}
+.filho6{
+	width:100%;
+	height: 15vh;
+	background-color: darkgreen;
+}
+
+.filho1 img{
+	width: auto;
+	height: 95%;
+}
+
+@media (max-width: 760px){
+	.filho1 label{
+		display: none;
+	}
+	.filho2 img{
+		width: 80%;
+	}
+	.filho3{
+		display: none;
+	}
+	.filho4{
+		width: 100%;
+		height: auto;
+	}
+	.filho5{
+		width: 100%;
+	}
+}
